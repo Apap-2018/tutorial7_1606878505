@@ -42,7 +42,7 @@ public class CarController {
 	private CarService carService;
 	
 	@PostMapping()
-	private CarModel addCarSubmit(@RequestBody CarModel car, HttpServletRequest req) {
+	private CarModel addCarSubmit(@RequestBody CarModel car) {
 		return carService.addCar(car);
 	}
 	
